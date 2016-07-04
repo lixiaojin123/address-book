@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		615F26821D29ED93004FD147 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 615F26811D29ED93004FD147 /* data.db */; };
 		6179B6931D28A8760055AEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179B6921D28A8760055AEAB /* AppDelegate.swift */; };
 		6179B6951D28A8760055AEAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179B6941D28A8760055AEAB /* ViewController.swift */; };
 		6179B6981D28A8760055AEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6179B6961D28A8760055AEAB /* Main.storyboard */; };
@@ -18,7 +19,7 @@
 		6179B6C91D28AA6D0055AEAB /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179B6C61D28AA6D0055AEAB /* SQLiteDB.swift */; };
 		6179B6CA1D28AA6D0055AEAB /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179B6C71D28AA6D0055AEAB /* SQLTable.swift */; };
 		6179B6CB1D28AA6D0055AEAB /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179B6C81D28AA6D0055AEAB /* String-Extras.swift */; };
-		6179B6CD1D28ACAD0055AEAB /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 6179B6CC1D28ACAD0055AEAB /* data.db */; };
+		6179B6D31D28C0240055AEAB /* b.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6179B6D21D28C0240055AEAB /* b.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		615F26811D29ED93004FD147 /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = "<group>"; };
 		6179B68F1D28A8760055AEAB /* address book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "address book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6179B6921D28A8760055AEAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6179B6941D28A8760055AEAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +59,7 @@
 		6179B6C61D28AA6D0055AEAB /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
 		6179B6C71D28AA6D0055AEAB /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
 		6179B6C81D28AA6D0055AEAB /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
-		6179B6CC1D28ACAD0055AEAB /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = data.db; path = ../../../../Volumes/LXJ/data.db; sourceTree = "<group>"; };
+		6179B6D21D28C0240055AEAB /* b.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				6179B6C01D28A8B40055AEAB /* libsqlite3.0.tbd */,
-				6179B6CC1D28ACAD0055AEAB /* data.db */,
+				615F26811D29ED93004FD147 /* data.db */,
+				6179B6D21D28C0240055AEAB /* b.jpeg */,
 				6179B6C51D28AA6D0055AEAB /* SQLiteDB */,
 				6179B6911D28A8760055AEAB /* address book */,
 				6179B6A61D28A8760055AEAB /* address bookTests */,
@@ -220,6 +223,7 @@
 				TargetAttributes = {
 					6179B68E1D28A8760055AEAB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L6BCEURQG3;
 					};
 					6179B6A21D28A8760055AEAB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -257,7 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6179B69D1D28A8760055AEAB /* LaunchScreen.storyboard in Resources */,
-				6179B6CD1D28ACAD0055AEAB /* data.db in Resources */,
+				6179B6D31D28C0240055AEAB /* b.jpeg in Resources */,
+				615F26821D29ED93004FD147 /* data.db in Resources */,
 				6179B69A1D28A8760055AEAB /* Assets.xcassets in Resources */,
 				6179B6981D28A8760055AEAB /* Main.storyboard in Resources */,
 			);
@@ -432,10 +437,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "address book/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "imnu.edu.cn.address-book";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105062l/Desktop/address book/address book/Header.h";
 			};
 			name = Debug;
@@ -444,10 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "address book/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "imnu.edu.cn.address-book";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105062l/Desktop/address book/address book/Header.h";
 			};
 			name = Release;
@@ -517,6 +528,7 @@
 				6179B6B91D28A8760055AEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6179B6BA1D28A8760055AEAB /* Build configuration list for PBXNativeTarget "address bookTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +537,7 @@
 				6179B6BC1D28A8760055AEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6179B6BD1D28A8760055AEAB /* Build configuration list for PBXNativeTarget "address bookUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +546,7 @@
 				6179B6BF1D28A8760055AEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
