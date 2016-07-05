@@ -39,10 +39,16 @@ class File: UIViewController {
             x.text! += "  name： "+String(u["uname"]!)+"  phone: "+String(u["mobile"]!)+"   address: "+String(u["address"]!)+"  email: "+String(u["email"]!)+"\n"
         }
     }
+    @IBAction func clear(sender: AnyObject) {
+        let c = "delete from user"
+        let result = db.execute(c)
+        print(result)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-}
+   }
 

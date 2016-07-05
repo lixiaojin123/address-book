@@ -24,6 +24,7 @@
 		6179B6B31D28A8760055AEAB /* address_bookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179B6B21D28A8760055AEAB /* address_bookUITests.swift */; };
 		6179B6C11D28A8B40055AEAB /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6179B6C01D28A8B40055AEAB /* libsqlite3.0.tbd */; };
 		6179B6D31D28C0240055AEAB /* b.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6179B6D21D28C0240055AEAB /* b.jpeg */; };
+		6188131C1D2B43A7007FD383 /* delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6188131B1D2B43A7007FD383 /* delete.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		6179B6C01D28A8B40055AEAB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		6179B6C21D28A9BB0055AEAB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		6179B6D21D28C0240055AEAB /* b.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpeg; sourceTree = "<group>"; };
+		6188131B1D2B43A7007FD383 /* delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delete.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				6179B69E1D28A8760055AEAB /* Info.plist */,
 				6179B6C21D28A9BB0055AEAB /* Header.h */,
 				611FA2611D2A5A3900541ADA /* File.swift */,
+				6188131B1D2B43A7007FD383 /* delete.swift */,
 			);
 			path = "address book";
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6188131C1D2B43A7007FD383 /* delete.swift in Sources */,
 				615F26891D2A0A17004FD147 /* String-Extras.swift in Sources */,
 				611FA2621D2A5A3900541ADA /* File.swift in Sources */,
 				615F26871D2A0A17004FD147 /* SQLiteDB.swift in Sources */,

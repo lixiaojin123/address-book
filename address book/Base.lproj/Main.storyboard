@@ -47,11 +47,11 @@
                                     <color key="titleColor" red="0.95686274510000002" green="0.86564058976368885" blue="0.83914442564472203" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ipm-tm-B8j" kind="modal" id="O1o-Jr-dJu"/>
+                                    <segue destination="jup-am-yDl" kind="modal" id="ffP-eH-Tp0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="♡lxj的通讯录♡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVv-m9-1Hz">
-                                <rect key="frame" x="204" y="529" width="284" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="♡lxj's address book♡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVv-m9-1Hz">
+                                <rect key="frame" x="151" y="528" width="284" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.91786159980000004" green="0.91381706380000005" blue="0.1228284134" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -62,30 +62,79 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfS-mi-3f9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-146" y="88"/>
+            <point key="canvasLocation" x="-33" y="54"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="pqd-lt-HXq">
+        <!--Delete-->
+        <scene sceneID="JX3-KM-sCe">
             <objects>
-                <viewController id="Ipm-tm-B8j" sceneMemberID="viewController">
+                <viewController id="jup-am-yDl" customClass="delete" customModule="address_book" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fOS-D0-GV6"/>
-                        <viewControllerLayoutGuide type="bottom" id="h7u-8C-GS2"/>
+                        <viewControllerLayoutGuide type="top" id="UPU-gp-Ndl"/>
+                        <viewControllerLayoutGuide type="bottom" id="NzI-S7-aRb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GoP-Yb-Zy1">
+                    <view key="view" contentMode="scaleToFill" id="9d5-jt-wyI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="g.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zSm-lu-9o4">
-                                <rect key="frame" x="-20" y="0.0" width="500" height="734"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="g.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iug-BE-LmP">
+                                <rect key="frame" x="0.0" y="0.0" width="525" height="750"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDy-h5-lXF">
+                                <rect key="frame" x="7" y="518" width="77" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.40610378689999999" green="0.91786159980000004" blue="0.7672722058" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Yr-qK-osi" kind="modal" id="9Q5-uV-Qt2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delete Contact" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIk-om-Y4Q">
+                                <rect key="frame" x="0.0" y="14" width="260" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.91786159980000004" green="0.66838020056743108" blue="0.39692311653232282" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="♡lxj's address book♡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQy-Nr-LaZ">
+                                <rect key="frame" x="151" y="539" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.82735345323943776" green="0.91786159980000004" blue="0.046672932731200163" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the name you want to delete" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Srm-n4-oyj">
+                                <rect key="frame" x="0.0" y="185" width="276" height="30"/>
+                                <color key="backgroundColor" red="0.48499536431064572" green="0.48499536431064572" blue="0.48499536431064572" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.085753435863874294" green="0.025251270394610142" blue="0.073121591705850725" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.82735345319999998" green="0.91786159980000004" blue="0.046672932729999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byp-X8-Z3O">
+                                <rect key="frame" x="20" y="349" width="79" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.61111315248010212" green="0.25992392915782853" blue="0.95868782722513091" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="remove:" destination="jup-am-yDl" eventType="touchUpInside" id="oMB-aw-FQO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delete by name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4x-Mr-O2i">
+                                <rect key="frame" x="125" y="80" width="263" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.30806400259306138" green="0.36194457237577393" blue="0.48499536431064572" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="xx" destination="Srm-n4-oyj" id="FPi-mk-QT4"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5m2-vE-l9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8aa-cm-ek2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143" y="835"/>
+            <point key="canvasLocation" x="-66" y="793"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -151,18 +200,12 @@
                                 <rect key="frame" x="5" y="521" width="53" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="back">
-                                    <color key="titleColor" red="0.2884911268" green="0.91786159980000004" blue="0.25738018509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.64513890453066292" green="0.91786159980000004" blue="0.14733586369153023" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="7Yr-qK-osi" kind="modal" id="WoL-br-XEu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="♡lxj的通讯录♡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysh-pU-Ded">
-                                <rect key="frame" x="199" y="495" width="229" height="116"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.89835043140283721" green="0.95686274510000002" blue="0.13387826089465352" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCR-FF-i22">
                                 <rect key="frame" x="2" y="384" width="82" height="129"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
@@ -177,6 +220,18 @@
                                 <rect key="frame" x="-3" y="171" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a Contact" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbs-a3-M2l">
+                                <rect key="frame" x="0.0" y="6" width="295" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.4942005095" green="0.91786159980000004" blue="0.66226447249999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="♡lxj's address book♡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysh-pU-Ded">
+                                <rect key="frame" x="147" y="495" width="258" height="116"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.89835043140283721" green="0.95686274510000002" blue="0.13387826089465352" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -219,24 +274,34 @@
                                 <rect key="frame" x="0.0" y="532" width="66" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="back">
-                                    <color key="titleColor" red="0.6992125856603093" green="0.35281161330892868" blue="0.91786159980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.49420050950175165" green="0.91786159980000004" blue="0.66226447254434695" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="7Yr-qK-osi" kind="modal" id="S2e-Ye-xcl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="♡lxj的通讯录♡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exr-bO-9IR">
-                                <rect key="frame" x="195" y="529" width="176" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="♡lxj's address book♡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exr-bO-9IR">
+                                <rect key="frame" x="147" y="529" width="176" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.91786159980000004" green="0.86133984140192421" blue="0.39894173230075164" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Leq-6O-pOE">
-                                <rect key="frame" x="0.0" y="214" width="470" height="326"/>
+                                <rect key="frame" x="0.0" y="204" width="470" height="326"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eU-n3-fdy">
+                                <rect key="frame" x="40" y="166" width="108" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="clear">
+                                    <color key="titleColor" red="0.4061037869237849" green="0.91786159980000004" blue="0.76727220583959466" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear:" destination="jdA-jT-OU5" eventType="touchUpInside" id="sHG-Le-USn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -246,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLh-bl-CA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="801" y="76"/>
+            <point key="canvasLocation" x="735" y="72"/>
         </scene>
     </scenes>
     <resources>
